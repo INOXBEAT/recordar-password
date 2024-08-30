@@ -93,23 +93,12 @@ body {
 }
 
 .login__btn,
-.login__eye,
-.login__input-textbox,
 .login__segmented-btn,
 .login__social-btn {
   background-color: transparent;
   -webkit-appearance: none;
   appearance: none;
   -webkit-tap-highlight-color: transparent;
-}
-
-.login__btn,
-.login__eye {
-  cursor: pointer;
-  display: block;
-  outline: transparent;
-  transition: background-color var(--trans-dur), box-shadow var(--trans-dur),
-    color var(--trans-dur), opacity var(--trans-dur);
 }
 
 .login__btn {
@@ -197,65 +186,6 @@ body {
   height: 1rem;
 }
 
-.login__eye {
-  background-color: transparent;
-  border-radius: 0.375em;
-  box-shadow: 0 0 0 0.1875em var(--focus-t);
-  position: absolute;
-  right: 0.5em;
-  bottom: 0.5em;
-  width: 2.5em;
-  height: 2.5em;
-}
-
-.login__eye:focus-visible {
-  box-shadow: 0 0 0 0.1875em var(--focus);
-}
-
-.login__eye:hover {
-  background-color: hsl(var(--hue), 10%, 90%);
-}
-
-[dir="rtl"] .login__eye {
-  right: auto;
-  left: 0.5em;
-}
-
-.login__eye-icon {
-  flex-shrink: 0;
-  pointer-events: none;
-  margin: auto;
-  width: 1.5em;
-  height: auto;
-}
-
-.login__eye-icon:not([display="none"]) {
-  display: block;
-}
-
-.login__field {
-  position: relative;
-  margin-bottom: 2.25em;
-  transition: opacity var(--trans-dur);
-}
-
-.login__field-check {
-  display: block;
-  pointer-events: none;
-  position: absolute;
-  opacity: 0;
-  top: 1em;
-  right: 1em;
-  width: 1.5em;
-  height: 1.5em;
-  transition: opacity var(--trans-dur);
-}
-
-[dir="rtl"] .login__field-check {
-  right: auto;
-  left: 1em;
-}
-
 .login__footer,
 .login__form,
 .login__header {
@@ -323,36 +253,6 @@ body {
   padding: 1.5em 0;
 }
 
-.login__input-textbox {
-  border-radius: 0.75em;
-  box-shadow: 0 0 0 0.125em hsl(var(--hue), 10%, 80%) inset;
-  outline: transparent;
-  padding: 1.5em 1em 0.5em 1em;
-  padding-inline-end: 3.5em;
-  width: 100%;
-  transition: box-shadow var(--trans-dur), color var(--trans-dur);
-}
-
-.login__input-textbox:not(:disabled):focus-visible {
-  box-shadow: 0 0 0 0.1875em var(--focus) inset;
-}
-
-.login__input-textbox[aria-invalid="true"] {
-  box-shadow: 0 0 0 0.125em var(--error) inset;
-}
-
-.login__input-textbox[aria-invalid="true"]:not(:disabled):focus-visible {
-  box-shadow: 0 0 0 0.1875em var(--error) inset;
-}
-
-.login__input-textbox[aria-invalid="true"] ~ .login__error .login__error-icon {
-  display: block;
-}
-
-.login__field:has(.login__input-textbox:disabled) {
-  opacity: 0.5;
-}
-
 .login__label {
   color: hsl(var(--hue), 10%, 30%);
   cursor: text;
@@ -369,28 +269,6 @@ body {
   right: 1em;
   left: auto;
   transform-origin: 100% 0;
-}
-
-.login__input-textbox + .login__label {
-  pointer-events: none;
-}
-
-.login__input-textbox:focus-visible + .login__label {
-  color: var(--focus);
-}
-
-.login__input-textbox[aria-invalid="true"]:focus-visible + .login__label {
-  color: var(--error);
-}
-
-.login__input-textbox:focus-visible + .login__label,
-.login__input-textbox:not(:placeholder-shown) + .login__label {
-  transform: translateY(-25%) scale(0.75);
-}
-
-.login__input-textbox:not(:placeholder-shown):disabled ~ .login__field-check,
-.login__input-textbox:not(:placeholder-shown):valid ~ .login__field-check {
-  opacity: 1;
 }
 
 .login__logo {
@@ -602,18 +480,6 @@ body {
 
   .login__column {
     background-color: hsl(var(--hue), 10%, 10%);
-  }
-
-  .login__eye:hover {
-    background-color: hsl(var(--hue), 10%, 20%);
-  }
-
-  .login__field {
-    position: relative;
-  }
-
-  .login__input-textbox {
-    box-shadow: 0 0 0 0.125em hsl(var(--hue), 10%, 30%) inset;
   }
 
   .login__label {
