@@ -305,28 +305,9 @@
         })(AccessMode || (AccessMode = {}));
         var Greeting;
         (function (Greeting) {
-            Greeting["SignIn"] = "Welcome Back";
-            Greeting["SignUp"] = "Create an Account";
+            Greeting["SignIn"] = "Continuar como correo @unisalle";
+            Greeting["SignUp"] = "Continuar con correo de otras cuentas";
         })(Greeting || (Greeting = {}));
         var LoginInvalid;
-        (function (LoginInvalid) {
-            LoginInvalid["Email"] = "Enter your email";
-            LoginInvalid["Password"] = "Enter your password";
-        })(LoginInvalid || (LoginInvalid = {}));
-        var LoginState;
-        (function (LoginState) {
-            LoginState["Continue"] = "Continue";
-            LoginState["ContinueWorking"] = "Continuing\u2026";
-            LoginState["Login"] = "Sign In";
-            LoginState["LoginWorking"] = "Signing in\u2026";
-        })(LoginState || (LoginState = {}));
-        var PasswordDisplay;
-        (function (PasswordDisplay) {
-            PasswordDisplay["Off"] = "off";
-            PasswordDisplay["On"] = "on";
-        })(PasswordDisplay || (PasswordDisplay = {}));
-        var PasswordDisplayLabel;
-        (function (PasswordDisplayLabel) {
-            PasswordDisplayLabel["Hide"] = "Hide password";
-            PasswordDisplayLabel["Show"] = "Show password";
-        })(PasswordDisplayLabel || (PasswordDisplayLabel = {}));
+ 
+

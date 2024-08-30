@@ -12,11 +12,13 @@
   </head>
 
   <body>
+    
  
     <!-- Form desde el HTML -->
     <form class="login" method="post" action="">
+        
       <div class="login__form">
-        <h1 data-greeting="">Recordar Contraseña</h1>
+        <h1 data-greeting="">Tu correo es?...</h1>
         <div class="login__or">selecciona tipo de cuenta de correo</div>
         <div class="login__form-pages" data-stage="0">
           <div class="login__form-page">
@@ -44,161 +46,18 @@
               <div class="login__segmented-focus"></div>
             </div>
 
-            <div class="login__field">
-              <input
-                class="login__input-textbox"
-                id="user-email"
-                type="email"
-                name="email"
-                autocomplete="off"
-                pattern="^[a-zA-Z0-9.!#$%&amp;'*+\/=?^_`\{\|\}]+@[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)*$"
-                placeholder=" "
-              />
-              <label class="login__label" for="user-email">Email</label>
-              <svg
-                class="login__field-check"
-                width="16px"
-                height="16px"
-                aria-hidden="true"
-              >
-                <use href="#check"></use>
-              </svg>
-              <div class="login__error">
-                <svg
-                  class="login__error-icon"
-                  width="12px"
-                  height="12px"
-                  aria-hidden="true"
-                >
-                  <use href="#warning"></use>
-                </svg>
-                <span id="email-error" aria-live="assertive"></span>
-              </div>
-            </div>
-
+         
             <button class="login__btn" type="submit" data-action="continue">
               Continuar
             </button>
             
-            <div class="login__social">
-              <button
-                class="login__social-btn login__social-btn--google"
-                type="button"
-                title="Google"
-              >
-                <svg
-                  class="login__social-icon"
-                  width="16px"
-                  height="16px"
-                  aria-hidden="true"
-                >
-                  <use href="#google"></use>
-                </svg>
-              </button>
-              <button
-                class="login__social-btn login__social-btn--apple"
-                type="button"
-                title="Apple"
-              >
-                <svg
-                  class="login__social-icon"
-                  width="16px"
-                  height="16px"
-                  aria-hidden="true"
-                >
-                  <use href="#apple"></use>
-                </svg>
-              </button>
-              <button
-                class="login__social-btn login__social-btn--fb"
-                type="button"
-                title="Facebook"
-              >
-                <svg
-                  class="login__social-icon"
-                  width="16px"
-                  height="16px"
-                  aria-hidden="true"
-                >
-                  <use href="#fb"></use>
-                </svg>
-              </button>
-            </div>
+     
           </div>
-          <div class="login__form-page">
-            <div class="login__account">
-              <svg
-                class="login__avatar"
-                width="16px"
-                height="16px"
-                aria-hidden="true"
-              >
-                <use href="#avatar"></use>
-              </svg>
-              <span class="login__email" data-email=""></span>
-            </div>
-            <div class="login__field">
-              <a class="login__forgot" href="#">Forgot password?</a>
-              <input
-                class="login__input-textbox"
-                id="user-password"
-                type="password"
-                name="password"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label class="login__label" for="user-password">Password</label>
-              <div class="login__error">
-                <svg
-                  class="login__error-icon"
-                  width="12px"
-                  height="12px"
-                  aria-hidden="true"
-                >
-                  <use href="#warning"></use>
-                </svg>
-                <span id="password-error" aria-live="assertive"></span>
-              </div>
-              <button
-                class="login__eye"
-                type="button"
-                title="Show password"
-                data-action="password"
-              >
-                <svg
-                  class="login__eye-icon"
-                  width="24px"
-                  height="24px"
-                  data-icon="eye-off"
-                  aria-hidden="true"
-                >
-                  <use href="#eye-off"></use>
-                </svg>
-                <svg
-                  class="login__eye-icon"
-                  width="24px"
-                  height="24px"
-                  data-icon="eye-on"
-                  aria-hidden="true"
-                  display="none"
-                >
-                  <use href="#eye-on"></use>
-                </svg>
-              </button>
-            </div>
-            <button class="login__btn" type="submit" data-action="login">
-              Sign In
-            </button>
-            <button
-              class="login__btn login__btn--secondary"
-              type="button"
-              data-action="back"
-            >
-              Back
-            </button>
-          </div>
+
+        
         </div>
       </div>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
