@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recordar Contraseña</title>
 </head>
+
 <body>
-    
+    <!-- Email Input-->
+    <div class="login__field">
+        <input type="email" class="login" name="email" autocomplete="off" placeholder="  ">
+        <label for="user-email" class="login__label">Email</label>
+        <svg class="login__field-check" width="16px" height="16px" aria-hidden="true">
+            <use href="#check" />
+        </svg>
+        <div class="login__error">
+            <svg class="login__error-icon" width="12px" height="12px" aria-hidden="true">
+                <use href="#warning" />
+            </svg>
+            <span id="email-error" aria-live="assertive"></span>
+        </div>
+    </div>
 </body>
+
 </html>
