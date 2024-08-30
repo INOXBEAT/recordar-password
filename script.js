@@ -305,8 +305,8 @@
         })(AccessMode || (AccessMode = {}));
         var Greeting;
         (function (Greeting) {
-            Greeting["SignIn"] = "Continuar como correo @unisalle";
-            Greeting["SignUp"] = "Continuar con correo de otras cuentas";
+            Greeting["SignIn"] = "Correo @unisalle";
+            Greeting["SignUp"] = "gmail, outlook, etc...";
         })(Greeting || (Greeting = {}));
         var LoginInvalid;
  
