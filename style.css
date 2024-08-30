@@ -55,6 +55,10 @@ body {
   transition: background-color var(--trans-dur), color var(--trans-dur);
 }
 
+h3 {
+    color: blue;
+}
+
 .login {
   display: flex;
   align-items: center;
