@@ -55,9 +55,8 @@ body {
   height: 100vh;
   justify-content: center;
   transition: background-color var(--trans-dur), color var(--trans-dur);
-  font-family: Verdana;
-
-  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'futura-lt-bt-2', Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
   }
 
@@ -231,7 +230,6 @@ h3 {
 .login__segmented-btn {
   border-radius: 0.875em;
   box-shadow: 0 0 0 0.1875em var(--focus-t) inset;
-  color: hsl(var(--hue), 10%, 40%);
   cursor: pointer;
   outline: transparent;
   padding: 0.75em;
