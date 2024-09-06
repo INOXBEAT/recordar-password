@@ -56,10 +56,13 @@ body {
   justify-content: center;
   transition: background-color var(--trans-dur), color var(--trans-dur);
   font-family: Verdana;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
   }
 
 h3 {
-    color: #003057;
+    color: gainsboro;
     text-align: center;
     font-size: 30px;
   }
@@ -107,7 +110,7 @@ h3 {
 }
 
 .login__btn:not(:disabled):hover {
-  background-color: #225e8f;
+  background-color: #063861;
   cursor: pointer;
 }
 
@@ -129,13 +132,11 @@ h3 {
 
 .login__form,
 .login__header {
-  width: 100%;
+  width: 80%;
 }
 
 .login__form {
   flex-shrink: 0;
-  margin: 3em 0;
-  height: min-content;
   border-radius: 20px;
 
   background-color: transparent;
@@ -144,6 +145,10 @@ h3 {
   padding: 20px;
   box-shadow: 0 0 0 0.1875em var(--focus-t) inset;
   
+  max-width: 700px;
+  width: calc(100% - 80px);
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .login__form-page {
@@ -327,9 +332,10 @@ h3 {
 }
 
 /* Beyond mobile */
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
   .login__form {
-    max-width: 22em;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
