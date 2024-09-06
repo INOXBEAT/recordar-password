@@ -42,10 +42,15 @@ body,
 button {
   color: var(--fg);
   font: 1em/1.5 "DM Sans", sans-serif;
+
+ 
 }
 
 body {
-  background-color: var(--bg);
+  background-image: url(u_lasalle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -54,9 +59,10 @@ body {
   }
 
 h3 {
-    color: blue;
+    color: #003057;
     text-align: center;
-}
+    font-size: 30px;
+  }
 
 .login {
   display: flex;
@@ -82,7 +88,7 @@ h3 {
 }
 
 .login__btn {
-  background-color: var(--primary);
+  background-color: #003057;
   border-radius: 0.75em;
   box-shadow: 0 0 0 0.125em var(--bg-t), 0 0 0 0.3125em var(--focus-t);
   color: white;
@@ -101,7 +107,8 @@ h3 {
 }
 
 .login__btn:not(:disabled):hover {
-  background-color: hsl(var(--hue), 90%, 30%);
+  background-color: #225e8f;
+  cursor: pointer;
 }
 
 .login__btn--secondary {
@@ -129,6 +136,14 @@ h3 {
   flex-shrink: 0;
   margin: 3em 0;
   height: min-content;
+  border-radius: 20px;
+
+  background-color: transparent;
+  backdrop-filter: blur(18px);
+
+  padding: 20px;
+  box-shadow: 0 0 0 0.1875em var(--focus-t) inset;
+  
 }
 
 .login__form-page {
@@ -165,7 +180,7 @@ h3 {
 }
 
 .login__or {
-  color: hsl(var(--hue), 10%, 40%);
+  color: gray;
   display: flex;
   align-items: center;
   font-size: 0.75em;
