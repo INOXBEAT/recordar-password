@@ -68,6 +68,10 @@ body {
   height: 100vh;
 }
 
+.home a {
+  color: white;
+}
+
 .home-button {
   position: absolute;
   position: fixed;
@@ -75,7 +79,6 @@ body {
   top: 10px;
   left: 20px;
   text-decoration: none;
-  color: #003057;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -110,6 +113,7 @@ h3 {
   font-size:x-large;
   margin: 0 0 1.5rem;
   text-align: center;
+  color: white;
 }
 
 .login__btn,
@@ -169,8 +173,9 @@ h3 {
   flex-shrink: 0;
   border-radius: 20px;
 
-  background-color: transparent;
-  backdrop-filter: blur(18px);
+  background-color: rgba(0, 0, 0, 0.61);
+  /* backdrop-filter: blur(18px); */
+
 
   padding: 20px;
   box-shadow: 0 0 0 0.1875em var(--focus-t) inset;
@@ -244,7 +249,9 @@ h3 {
 }
 
 .login__segmented {
-  background-color: hsl(var(--hue), 10%, 90%);
+  /* background-color: hsl(var(--hue), 10%, 90%); */
+  background-color: #71829894;
+
   border-radius: 0.75em;
   display: flex;
   margin-bottom: 1.5em;
