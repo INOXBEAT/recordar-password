@@ -140,7 +140,7 @@ class LoginForm {
             window.open("https://tuclave.lasalle.edu.co/", "_blank");
         } else if (this.accessMode === AccessMode.SignUp) {
             // Redirigir a la URL para otro correo
-            window.open("https://cipte.xyz/moodle/login/forgot_password.php", "_blank");
+            window.open("https://unisallevirtual.lasalle.edu.co/login/forgot_password.php", "_blank");
         }
     }
 }
